@@ -5,6 +5,11 @@ module.exports = [
     country: 'us'
   },
   {
+    title: 'French',
+    locale: 'fr',
+    country: 'fr'
+  },
+  {
     title: 'Русский',
     locale: 'ru',
     country: 'ru'
