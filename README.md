@@ -1,67 +1,32 @@
-<p align="center">
-  <a href="https://vuetifyjs.com" target="_blank"><img width="100"src="https://vuetifyjs.com/static/doc-images/logo.svg"></a>
-</p>
+# Pour traduire la documentation de Vuetify
 
-## Vuetify Documentation
-<p>This is the repository for the <a href="https://vuetifyjs.com" target="_blank">Vuetify</a> documentation.</p>
+### Workflow de travail
 
-## Project Install
+Cette branche de travail `working` est volontairement mise en avant et doit uniquement être mise à jour dans le sens :
 
-``` bash
-git clone https://github.com/vuetifyjs/vuetifyjs.com.git
-yarn
-yarn dev
+`vuetifyjs/vuetifyjs.com:dev` --> `vuejs-fr/vuetifyjs.com:working`.
+
+Nous traduisons les fichiers directement dans le dossier `lang/en` sans les renommer. Cela permet lors de la mise à jour de la documentation via l'utilisation des commandes :
+
+```
+git fetch upstream
+git merge working upstream/dev
 ```
 
-## Running with local Vuetify
+d'obtenir des conflits **sur les pages déjà traduites** et ainsi maintenir la documentation à jour en fonction des modifications à travers **les documents déjà traduits**.
 
-### Run Vuetify
+Note : `git remote add upstream https://github.com/vuetifyjs/vuetifyjs.com.git` est nécessaire au préalable pour utiliser les commandes ci-dessus.
 
-``` bash
-git clone https://github.com/vuetifyjs/vuetify.git
-yarn
-yarn link
-yarn watch
-```
+### Traduction
 
-### Link Vuetify to docs
+Pour savoir ce qui est [en cours de traduction](https://github.com/vuejs-fr/vuetifyjs.com/issues/1) ou [comment traduire un fichier](https://github.com/vuejs-fr/vuetifyjs.com/issues/2), référez vous aux issues correspondantes.
 
-``` bash
-git clone https://github.com/vuetifyjs/vuetifyjs.com.git
-yarn
-yarn link vuetify
-yarn dev
-```
+### Reverssement
 
-## Want to help with the translation?
+Quand un fichier traduit est validé par pull request, on le met à jour dans le dossier `lang/fr` de `vuejs-fr/vuetifyjs.com:dev` puis on propose une pull request au site principal :
 
-If you feel ambitious with translating the documentation, you can fork the repo, create a "work-in-progress" issue to inform others that you're doing the translation, and go for it.
+`vuejs-fr/vuetifyjs.com:dev` --> `vuetifyjs/vuetifyjs.com:dev`
 
-If you are looking to get more feedback before beginning, let us know that you want to help translate the documentation in the [community discord](https://community.vuetifyjs.com/) in the #i18n channel and would like feedback.
+ainsi le dossier officiel hébergeant la documentation possède bien le dossier `lang/fr` en français et le dossier `lang/en` en anglais.
 
-We greatly appreciate help from the community with this :) 
-
-### How to contribute
-
-Punctual problems in translations, such as spelling errors or confusing phrases, can be reported by sending _issues_ in this repository. Make it clear which page the problem is referring to, and preferably offer a suggestion to improve clarity.
-
-If you feel comfortable translating/reviewing content on your own, the steps are:
-
-- Make an _fork_ of this _repo_ to your own account;
-- Create an _issue_ in this _repo_, of type `work-in-progress`, to inform what you are doing;
-- If you want to add a new language, copy and follow the [en translation structure](https://github.com/vuetifyjs/vuetifyjs.com/tree/master/lang/en);
-- Translate/revise the files that you choose;
-- When finished, make a _pull request_ **with the _commit_ description in English**;
-- All PRs should be made to the `dev` branch;
-- Do not forget to `pull` the latest changes before resuming the process.
-
-If you can not completely finish a file translation, but want to send the partial work, make it clear in the _issue_ of your work after the submission, to report what issues persist in the uploaded file. In this case, you must include untranslated [component files](https://github.com/vuetifyjs/vuetifyjs.com/tree/master/lang/en/components) and variables in your commit.
-
-### Translation structure
-
-- Make sure the language you are working is listed at:
-  - [i18n/languages.js](https://github.com/vuetifyjs/vuetifyjs.com/blob/master/i18n/languages.js);
-  - [lang/index.js](https://github.com/vuetifyjs/vuetifyjs.com/blob/master/lang/index.js);
-- Existing translations can be found in the [lang folder](https://github.com/vuetifyjs/vuetifyjs.com/tree/master/lang);
-- Follow the [en translation structure](https://github.com/vuetifyjs/vuetifyjs.com/tree/master/lang/en);
-- Keep the component files even if you don't translate them.
+Note : il peut être intéressant de faire une pull request par ficher validé et donc de créer une branche dérivée de `vuejs-fr/vuetifyjs.com:dev` pour faire la pull request (`vuejs-fr/vuetifyjs.com:dev` --> `vuejs-fr/vuetifyjs.com:only_one_changed_file_from_master` --> `vuetifyjs/vuetifyjs:dev`)
