@@ -6,7 +6,7 @@ export default {
   cartEmptySubheader: 'Votre panier est vide',
   thankYouHeader: 'Merci !',
   thankYouSubheader: "Votre achat permet d'assurer la maintenance et le développement de Vuetify",
-  helpSupport: 'Supportez le développement de Vuetify and offrez-vous un peu de swag à vous-même et à votre équipe !',
+  helpSupport: 'Supportez le développement de Vuetify et offrez-vous un peu de swag à vous-même et à votre équipe !',
   checkout: 'Procéder au paiement',
   addToCart: 'Ajouter au panier',
   details: 'Détails',
