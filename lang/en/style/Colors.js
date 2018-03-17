@@ -9,10 +9,10 @@ export default {
   stylusPackHeader: 'Pack de couleur Stylus',
   stylusPackText: "Bien que pratique, le pack de couleur augmente la taille du CSS exporté de ~30Ko. Cependant, certains projets utiliseront uniquement les classes par défaut créées à la volée par Vuetify. Pour désactiver cette fonctionnalité, vous allez devoir importer et créer _manuellement_ le fichier **stylus** principal. Ceci implique d'utiliser le [loader stylus](https://github.com/shama/stylus-loader) et un fichier d'entrée `.styl`.",
   stylusPackText2: 'Votre nouveau fichier `main.styl` doit maintenant être inclu dans votre projet.',
-  alert: 'Vous **devez** configurer webpack pour utiliser `stylus`. Si vous utilisez un [template pré-concu](/getting-started/quick-start#new-applications) ça devrait déjà être bon pour vous.',
+  alert: 'Vous **devez** configurer webpack pour utiliser `stylus`. Si vous utilisez un [template pré-conçu](/getting-started/quick-start#new-applications) ça devrait déjà être bon pour vous.',
   stylusPackText3: "Cela peut aussi être fait dans votre fichier **App.vue**. Gardez en tête que selon la configuration de votre projet, cela _va_ augmenter le temps de compilation à chaque fois que votre fichier d'entrée sera modifié, car les fichiers stylus seront regénérés.",
-  colorHeader: 'Couleurs Material',
-  colorText: 'Ci-dessous la liste des couleurs Material Design regroupées par couleur principale.',
+  colorHeader: 'Charte des couleurs',
+  colorText: 'Ci-dessous la liste des couleurs de la charte de conception regroupées par couleur principale.',
   toc: [
     {
       text: 'Introduction',
@@ -31,7 +31,7 @@ export default {
       href: 'stylus-color-pack'
     },
     {
-      text: 'Couleurs Material',
+      text: 'Charte des couleurs',
       href: 'material-colors'
     }
   ]
