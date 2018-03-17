@@ -12,12 +12,12 @@ export default {
     {
       img: '/static/doc-images/feature2.svg',
       title: 'Composants Material et sémantiques',
-      text: 'Préparez-vous à une armada de composants spécialiés mis à votre disposition. Avec plus de 80 composants, il y a une solution pour chaque application.'
+      text: 'Préparez-vous à une armada de composants spécialisés mis à votre disposition. Avec plus de 80 composants, il y a une solution pour chaque application.'
     },
     {
       img: '/static/doc-images/feature3.svg',
       title: 'Communauté dynamique',
-      text: "Lorsque vous rencontrez un obstacle, vous avez immédiatement besoin d'aide. Vuetify propose un support en ligne par chat grâce à la communauté grandissante de notre Discord."
+      text: "Lorsque vous rencontrez un obstacle, vous avez immédiatement besoin d'aide. Vuetify propose un support en ligne par chat grâce à la communauté grandissante sur notre Discord."
     }
   ],
   checkFeaturesTitle: 'Tous les outils dont vous avez besoin',
@@ -25,19 +25,19 @@ export default {
   checkFeatures: [
     'Soutien communautaire',
     'Thèmes dynamiques',
-    'Support du SSR and PWA',
+    'Support du SSR et PWA',
     '8 templates vue-cli'
   ],
   checkFeaturesCtd: [
-    'Plus de 80+ composants Material Design',
-    'Imports A La Carte',
+    'Plus de 80 composants Material Design',
+    'Imports à la carte',
     'Composants de transition',
     'Ultra-rapide'
   ],
   componentFramework: 'Component Framework',
   letterFromAuthor: [
-    'Hey',
-    "Je sais que choisir un framework front-end peut être une tâche décourageante -- il y a tellement d'options à prendre en compte et chacun d'entre eux se proclame d'être le meilleur. Donc vous devez décider-vous même, quels sont les paramètres du succès ?",
+    'Hé',
+    "Je sais que choisir un framework front-end peut être une tâche décourageante -- il y a tellement d'options à prendre en compte et chacun d'entre eux se proclame d'être le meilleur. Donc vous devez décider-vous même, quels sont les métriques du succès ?",
     "C'était moi il y a un an. Il fallait choisir parmi des tas d'outils front-end, mais aucun d'entre eux avait tout ce dont j'avais besoin, et c'est pour cela que j'ai commencé à travailler sur Vuetify.",
     "Je suis extrêmement touché que vous avez considéré à utiliser Vuetify en tant que votre prochain framework front-end. Beaucoup d'attention a été consacrée dans l'élaboration d'une configuration parfaite pour développer n'importe quelle idée issue de la conception jusqu'à la production. J'attend avec impatience votre participation à la communauté Vuetify, et je suis excité de voir quelles choses incroyables vous allez créer !"
   ],
