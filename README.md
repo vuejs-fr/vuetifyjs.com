@@ -6,7 +6,7 @@ Cette branche de travail `working` est volontairement mise en avant et doit uniq
 
 `vuetifyjs/vuetifyjs.com:dev` --> `vuejs-fr/vuetifyjs.com:working`.
 
-Nous traduisons les fichiers directement dans le dossier `lang/en` sans les renommer. Cela permet lors de la mise à jour de la documentation via l'utilisation des commandes :
+Nous traduisons les fichiers directement dans le dossier `src/lang/en` sans les renommer. Cela permet lors de la mise à jour de la documentation via l'utilisation des commandes :
 
 ```
 git fetch upstream
@@ -23,7 +23,7 @@ Pour savoir ce qui est [en cours de traduction](https://github.com/vuejs-fr/vuet
 
 ### Reverssement
 
-Quand un fichier traduit est validé par pull request, on le met à jour dans le dossier `lang/fr` de `vuejs-fr/vuetifyjs.com:dev` puis on propose une pull request au site principal :
+Quand un fichier traduit est validé par pull request, on le met à jour dans le dossier `src/lang/fr` de `vuejs-fr/vuetifyjs.com:dev` puis on propose une pull request au site principal :
 
 `vuejs-fr/vuetifyjs.com:dev` --> `vuetifyjs/vuetifyjs.com:dev`
 
