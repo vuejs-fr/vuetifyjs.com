@@ -13,6 +13,9 @@ module.exports = {
     'plugin:vue/recommended',
     'standard'
   ],
+  plugins: [
+    'json'
+  ],
   globals: {
     docsearch: true
   },
@@ -31,23 +34,27 @@ module.exports = {
       files: '**/*.vue',
       rules: {
         indent: false,
-        // TODO: disabled until vuejs/eslint-plugin-vue#349 is fixed
-        /*"vue/script-indent": ["error", 2, {
+        "vue/script-indent": ["error", 2, {
           "baseIndent": 1,
-          "switchCase": 0,
+          "switchCase": 1,
           "ignores": []
-        }]*/
+        }],
+        "vue/html-closing-bracket-newline": ["error", {
+          "singleline": "never",
+          "multiline": "always"
+        }],
+        "vue/html-closing-bracket-spacing": "error"
       }
     },
     {
-      files: 'examples/**/*.vue',
+      files: 'src/examples/**/*.vue',
       rules: {
         "vue/valid-v-on": false,
         "vue/no-parsing-error": false, // This rule doesn't allow empty event listeners
         "vue/html-self-closing": ["error", {
           "html": {
             "void": "never",
-            "normal": "always",
+            "normal": "never",
             "component": "never"
           },
           "svg": "always",
@@ -56,7 +63,7 @@ module.exports = {
       }
     },
     {
-      files: 'examples/layouts/**/*.vue',
+      files: 'src/examples/layouts/**/*.vue',
       rules: {
         "vue/order-in-components": false,
         "vue/require-default-prop": false

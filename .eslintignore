@@ -1,5 +1,2 @@
-/api/**/*
-/releases/**/*
-/static/**/*
-/dist/**/*
-/public/**/*
+/src/public
+/src/releases
